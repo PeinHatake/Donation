@@ -1,4 +1,4 @@
-package ie.app;
+package ie.app.activities;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +12,11 @@ import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.ProgressBar;
 import android.widget.RadioGroup;
+import android.view.MenuInflater;
+import android.widget.Toast;
+
+import ie.app.R;
+
 public class MainActivity extends AppCompatActivity {
     private Button donateButton;
     private RadioGroup paymentMethod;
@@ -45,18 +50,26 @@ public class MainActivity extends AppCompatActivity {
         amountPicker.setMaxValue(1000);
         progressBar.setMax(10000);
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId())
+        {
+            case R.id.menuReport:
+                Toast toast = Toast.makeText(this, "Report Selected",
+                        Toast.LENGTH_SHORT);
+                toast.show();
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
+
     public void donateButtonPressed (View view)
     {
         int amount = amountPicker.getValue();
