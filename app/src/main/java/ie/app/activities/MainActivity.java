@@ -1,4 +1,5 @@
 package ie.app.activities;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -58,13 +59,11 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
         switch (item.getItemId())
         {
-            case R.id.menuReport:
-                Toast toast = Toast.makeText(this, "Report Selected",
-                        Toast.LENGTH_SHORT);
-                toast.show();
+            case R.id.menuReport : startActivity (new Intent(this, Report.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

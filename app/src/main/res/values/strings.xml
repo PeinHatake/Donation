@@ -7,4 +7,7 @@
     <string name="paypal">PayPal</string>
     <string name="direct">Direct</string>
     <string name="menuReport">Report</string>
+    <string name="reportTitle">Report</string>
+    <string name="donate_menu">Donate</string>
+
 </resources>
