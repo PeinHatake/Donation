@@ -44,7 +44,7 @@ public class Base extends AppCompatActivity
     public boolean onPrepareOptionsMenu (Menu menu){
         super.onPrepareOptionsMenu(menu);
         MenuItem report = menu.findItem(R.id.menuReport);
-        MenuItem donate = menu.findItem(R.id.donate_menu);
+        MenuItem donate = menu.findItem(R.id.menuDonate);
         if(donations.isEmpty())
             report.setEnabled(false);
         else

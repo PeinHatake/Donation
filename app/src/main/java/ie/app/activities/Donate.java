@@ -34,6 +34,8 @@ public class Donate extends Base {
         setContentView(R.layout.activity_donate);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
         donateButton = (Button) findViewById(R.id.donateButton);
         paymentMethod = (RadioGroup) findViewById(R.id.paymentMethod);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -44,22 +46,6 @@ public class Donate extends Base {
         amountPicker.setMaxValue(1000);
         progressBar.setMax(10000);
         amountTotal.setText("$0");
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_donate, menu);
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        switch (item.getItemId())
-        {
-            case R.id.menuReport : startActivity (new Intent(this, Report.class));
-                break;
-        }
-        return super.onOptionsItemSelected(item);
     }
     public void donateButtonPressed (View view)
     {
@@ -81,3 +67,4 @@ public class Donate extends Base {
         }
     }
 }
+
