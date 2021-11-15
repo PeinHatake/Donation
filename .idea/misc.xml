@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Code/Donation.1.0/app/src/main/res/layout/content_main.xml" value="0.28532608695652173" />
+        <entry key="..\:/Code/Donation/app/src/main/res/layout/activity_donate.xml" value="0.2509057971014493" />
         <entry key="..\:/Code/Donation/app/src/main/res/layout/activity_main.xml" value="0.371875" />
         <entry key="..\:/Code/Donation/app/src/main/res/layout/activity_report.xml" value="0.371875" />
+        <entry key="..\:/Code/Donation/app/src/main/res/layout/content_main.xml" value="0.2509057971014493" />
+        <entry key="..\:/Code/Donation/app/src/main/res/layout/row_donate.xml" value="0.20625" />
+        <entry key="..\:/Code/Donation/app/src/main/res/menu/donate.xml" value="0.36770833333333336" />
         <entry key="..\:/Code/Donation/app/src/main/res/menu/menu_donate.xml" value="0.371875" />
         <entry key="..\:/Code/Donation/app/src/main/res/menu/menu_main.xml" value="0.371875" />
       </map>
