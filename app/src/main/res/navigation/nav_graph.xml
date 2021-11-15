@@ -6,7 +6,7 @@
     app:startDestination="@id/mainActivity">
     <activity
         android:id="@+id/mainActivity"
-        android:name="ie.app.activities.MainActivity"
+        android:name="ie.app.activities.Donate"
         android:label="content_main"
         tools:layout="@layout/content_main" />
 </navigation>

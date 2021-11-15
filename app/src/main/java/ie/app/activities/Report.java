@@ -2,7 +2,6 @@ package ie.app.activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
@@ -41,7 +40,7 @@ public class Report extends AppCompatActivity
     {
         switch (item.getItemId())
         {
-            case R.id.donate_menu: startActivity (new Intent(this, MainActivity.class));
+            case R.id.donate_menu: startActivity (new Intent(this, Donate.class));
                 break;
         }
         return super.onOptionsItemSelected(item);
