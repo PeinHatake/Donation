@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context=".Donate">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myapplication.activities.Donate">
     <item
         android:id="@+id/menuReport"
         android:orderInCategory="100"
@@ -11,7 +11,7 @@
     <item
         android:id="@+id/menuDonate"
         android:orderInCategory="100"
-        android:title="@string/donate_menu"
+        android:title="@string/menuDonate"
         app:showAsAction="never"
         android:onClick="donate"/>
     <item
@@ -20,6 +20,4 @@
         app:showAsAction="never"
         android:title="@string/menuReset"
         android:onClick="reset"/>
-
-
 </menu>
